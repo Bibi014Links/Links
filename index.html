@@ -1,0 +1,148 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bibi014 Passageiros</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 24px;
+    }
+    header {
+      background: #000;
+      color: #ffd400;
+      padding: 32px 24px;
+      text-align: center;
+      border-radius: 16px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin-top: 12px;
+      font-size: 1.1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #000;
+    }
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 18px;
+      border-radius: 12px;
+      background: #000;
+      color: #ffd400;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .qr {
+      margin-top: 16px;
+      display: flex;
+      justify-content: center;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>BIBI014 Passageiros</h1>
+      <p>Baixe o aplicativo, fale com nossa Central no <strong>WhatsApp (14) 99875-1995</strong> e acompanhe a página oficial.<br />Conforto, segurança e prêmios para você!</p>
+    </header><div class="grid">
+  <div class="card">
+    <h2>📲 Baixe o App – Google Play</h2>
+    <p>Faça o download agora mesmo do App BIBI014 Passageiros.</p>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=ikKpss.bibimob014" target="_blank">Abrir Google Play</a>
+    <div class="qr" id="qr-google"></div>
+  </div>
+
+  <div class="card">
+    <h2>🍎 Baixe o App – Apple Store</h2>
+    <p>Usuários de iPhone já podem baixar o aplicativo.</p>
+    <a class="btn" href="https://apps.apple.com/br/app/bibi-mob-014/id6751552896" target="_blank">Abrir Apple Store</a>
+    <div class="qr" id="qr-apple"></div>
+  </div>
+
+  <div class="card">
+    <h2>☎️ Central de Atendimento</h2>
+    <p>Entre em contato com nossa Central.</p>
+    <strong>WhatsApp e Central: (14) 99875-1995</strong>
+    <br />
+    <a class="btn" href="https://wa.me/5514998751995?text=Bibi014" target="_blank">Chamar no WhatsApp</a><br
+    <div class="qr" id="qr-central"></div>
+  </div>
+
+  <div class="card">
+    <h2>💬 WhatsApp Automatizado</h2>
+    <p>Envie a palavra <strong>Bibi014</strong> no WhatsApp para atendimento automático.</p>
+    <a class="btn" href="https://wa.me/+558000004185?text=Bibi014" target="_blank">Abrir WhatsApp</a>
+    <div class="qr" id="qr-whatsapp"></div>
+  </div>
+
+  <div class="card">
+    <h2>🌐 Página Oficial</h2>
+    <p>Acesse todos os links oficiais da Bibi014 Passageiros.</p>
+    <a class="btn" href="https://conecta.bio/Bibi014Oficial" target="_blank">Acessar ConectaBio</a>
+    <div class="qr" id="qr-site"></div>
+  </div>
+  <div class="card">
+    <h2>📲 Baixe o App – Google Play</h2>
+    <p>Seja Nosso Motorista Parceiro BIBI014 MOTORISTAS.</p>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=ikKmtt.bibimob014" target="_blank">Abrir Google Play</a>
+    <div class="qr" id="qr-google"></div>
+  </div>
+</div>
+
+<footer>
+  © 2026 Bibi014 Passageiros – Todos os direitos reservados
+</footer>
+
+  </div>  <script>
+    new QRCode(document.getElementById("qr-google"), {
+      text: "https://play.google.com/store/apps/details?id=ikKpss.bibimob014",
+      width: 160,
+      height: 160
+    });
+
+    new QRCode(document.getElementById("qr-apple"), {
+      text: "https://apps.apple.com/br/app/bibi-mob-014/id6751552896",
+      width: 160,
+      height: 160
+    });
+
+    new QRCode(document.getElementById("qr-central"), {
+      text: "tel:14998751995",
+      width: 160,
